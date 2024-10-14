@@ -39,8 +39,8 @@ send_weather() {
     local access_token="$1"
     local weather="$2"
     
-    local weather_type=$(echo "$weather" | awk '{print $1}')  # 天气状况
-    local temp=$(echo "$weather" | awk '{print $2 "摄氏度"}')  # 温度
+    local weather_type=$(echo "$weather" | awk '{print $1}')  
+    local temp=$(echo "$weather" | awk '{print $2 "摄氏度"}')  
 
     local today=$(TZ="Asia/Shanghai" date +"%Y年%m月%d日")
     local body=$(jq -n \

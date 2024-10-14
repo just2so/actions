@@ -42,7 +42,7 @@ send_weather() {
     local weather_type=$(echo "$weather" | awk '{print $1}')  # 天气状况
     local temp=$(echo "$weather" | awk '{print $2 "摄氏度"}')  # 温度
 
-    local today=$(date +"%Y年%m月%d日")
+    local today=$(TZ="Asia/Shanghai" date +"%Y年%m月%d日")
     local body=$(jq -n \
         --arg touser "$OPEN_ID" \
         --arg template_id "$TEMPLATE_ID" \

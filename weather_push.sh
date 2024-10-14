@@ -3,7 +3,7 @@
 # 微信公众号配置
 OPEN_ID="$OPEN_ID"          # 微信公众号 OpenID
 TEMPLATE_ID="$TEMPLATE_ID"  # 微信模板 ID
-CITY="淄博"                 # 你想查询的城市
+CITY="$CITY"                 # 你想查询的城市
 WEATHER_API_URL="https://wttr.in/$CITY?format=%C+%t&m"
 
 if ! command -v jq &> /dev/null; then

@@ -5,3 +5,12 @@
 进入页面以后我们来获取到这四个值
 
 appID appSecret openId template_id
+
+模板内容
+
+```bash
+今天：{{date.DATA}} 
+地区：{{region.DATA}} 
+天气：{{weather.DATA}} 
+气温：{{temp.DATA}} 
+```
